@@ -1,40 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07070D">
+<title>Flaut Cloud — безлимитное облачное хранилище с защитой .fsecurity | FlautCompany</title>
+<meta name="description" content="Flaut Cloud — облачное хранилище с безлимитным пространством на премиум-тарифах. Бесплатно 2 ГБ личного и 4 ГБ корпоративного хранилища. Защита .fsecurity: AES-256-GCM, отдельные ключи для каждого файла, три независимых уровня хранения.">
+<meta name="keywords" content="облачное хранилище, безлимитное хранилище, Flaut Cloud, .fsecurity, FlautCompany, корпоративное хранилище, шифрование AES-256-GCM, безопасное облако, Telegram хранилище">
+<meta name="author" content="FlautCompany">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Flaut Cloud">
+<meta name="application-name" content="Flaut Cloud">
+<meta name="generator" content="FlautCompany">
+<meta name="rating" content="general">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark">
+<meta name="yandex-verification" content="YANDEX_VERIFICATION_CODE">
+<meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Flaut Cloud">
+<meta property="og:title" content="Flaut Cloud — безлимитное облачное хранилище с защитой .fsecurity">
+<meta property="og:description" content="Бесплатно 2 ГБ личного и 4 ГБ корпоративного хранилища. Премиум — безлимит. Защита .fsecurity: AES-256-GCM, отдельные ключи, три независимых уровня.">
+<meta property="og:url" content="https://flautcloud-pro.github.io">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://flautcloud-pro.github.io/cloud-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Flaut Cloud — облачное хранилище">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@flautcompany">
+<meta name="twitter:creator" content="@flautcompany">
+<meta name="twitter:title" content="Flaut Cloud — безлимитное облачное хранилище с защитой .fsecurity">
+<meta name="twitter:description" content="Бесплатно 2 ГБ личного и 4 ГБ корпоративного хранилища. Премиум — безлимит. Защита .fsecurity.">
+<meta name="twitter:image" content="https://flautcloud-pro.github.io/cloud-cover.png">
+<meta name="twitter:image:alt" content="Flaut Cloud — облачное хранилище">
+<link rel="canonical" href="https://flautcloud-pro.github.io">
+<link rel="alternate" hreflang="ru" href="https://flautcloud-pro.github.io">
+<link rel="alternate" hreflang="x-default" href="https://flautcloud-pro.github.io">
+<link rel="icon" type="image/png" href="flaut_icon.png">
+<link rel="apple-touch-icon" href="flaut_icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://telegram.org">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://telegram.org/js/telegram-login.js?5" async></script>
+<script type="application/ld+json">
 {
-  "name": "Flaut Cloud — Облачное хранилище",
-  "short_name": "Flaut Cloud",
-  "description": "Безлимитное облачное хранилище с защитой .fsecurity. Бесплатно 2 ГБ личного и 4 ГБ корпоративного пространства.",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "any",
-  "background_color": "#07070D",
-  "theme_color": "#07070D",
-  "lang": "ru",
-  "dir": "ltr",
-  "categories": ["productivity", "utilities", "business"],
-  "icons": [
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "src": "flaut_icon.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "@type": "Organization",
+      "@id": "https://flautcompany.github.io/#organization",
+      "name": "FlautCompany",
+      "url": "https://flautcompany.github.io",
+      "logo": "https://flautcompany.github.io/flaut_icon.png",
+      "description": "Цифровая экосистема для бизнеса и творческих команд",
+      "foundingDate": "2025",
+      "sameAs": [
+        "https://t.me/flautcompany",
+        "https://t.me/flaut_news",
+        "https://t.me/flautcloud_bot",
+        "https://t.me/flautpay_bot"
+      ]
     },
     {
-      "src": "flaut_icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Загрузить файл",
-      "url": "/#files",
-      "description": "Загрузить файл в защищённое хранилище"
+      "@type": "WebSite",
+      "@id": "https://flautcloud-pro.github.io#website",
+      "url": "https://flautcloud-pro.github.io",
+      "name": "Flaut Cloud",
+      "inLanguage": "ru-RU",
+      "publisher": {"@id": "https://flautcompany.github.io/#organization"}
     },
     {
-      "name": "Тарифы",
-      "url": "/#pricing",
-      "description": "Посмотреть тарифы Premium"
+      "@type": "SoftwareApplication",
+      "@id": "https://flautcloud-pro.github.io#app",
+      "name": "Flaut Cloud",
+      "applicationCategory": "CloudStorageApplication",
+      "operatingSystem": "Web",
+      "url": "https://flautcloud-pro.github.io",
+      "publisher": {"@id": "https://flautcompany.github.io/#organization"},
+      "description": "Безлимитное облачное хранилище с защитой .fsecurity. Бесплатно 2 ГБ личного и 4 ГБ корпоративного пространства.",
+      "softwareVersion": "1.0.0",
+      "datePublished": "2026-09-21",
+      "inLanguage": "ru-RU",
+      "offers": [
+        {"@type": "Offer", "name": "Бесплатный", "price": "0", "priceCurrency": "RUB", "description": "2 ГБ личного и 4 ГБ корпоративного хранилища"},
+        {"@type": "Offer", "name": "На Лайте", "price": "299", "priceCurrency": "RUB", "description": "45 ГБ личного и 90 ГБ корпоративного хранилища"},
+        {"@type": "Offer", "name": "В Плюсе", "price": "399", "priceCurrency": "RUB", "description": "1 ТБ личного и 2 ТБ корпоративного хранилища"},
+        {"@type": "Offer", "name": "На Максималке", "price": "799", "priceCurrency": "RUB", "description": "Безлимитное личное и корпоративное хранилище"}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flautcloud-pro.github.io#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько места бесплатно в Flaut Cloud?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Бесплатно предоставляется 2 ГБ личного хранилища и 4 ГБ корпоративного. Для увеличения доступны премиум-тарифы."}
+        },
+        {
+          "@type": "Question",
+          "name": "Как защищены файлы в Flaut Cloud?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Файлы защищены технологией .fsecurity: шифрование AES-256-GCM, отдельный случайный ключ для каждого файла, три независимых уровня хранения — база метаданных, криптомодуль и изолированное хранилище."}
+        },
+        {
+          "@type": "Question",
+          "name": "Что нужно для корпоративного хранилища?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Для активации корпоративного хранилища нужны название компании и ИНН из 10 или 12 цифр. Команду создаёт владелец, он же управляет участниками."}
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли хранить файлы размером больше 2 ГБ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Один файл может быть до 2 ГБ. Общий объём хранилища не ограничен на премиум-тарифах."}
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Flaut Cloud отличается от обычных облачных хранилищ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Flaut Cloud использует технологию .fsecurity с тремя независимыми уровнями хранения. Ключи шифрования не хранятся в базе данных. Один украденный компонент не даёт доступа к пользовательским файлам."}
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://flautcloud-pro.github.io#filelist",
+      "name": "Файлы в Flaut Cloud",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "DigitalDocument",
+            "name": "Годовой_отчёт_2025.pdf",
+            "description": "Финансовый отчёт за 2025 год",
+            "encodingFormat": "application/pdf"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "DigitalDocument",
+            "name": "Договор_с_ООО_Ромашка.docx",
+            "description": "Шаблон договора на оказание услуг",
+            "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "ImageObject",
+            "name": "Team_photo_2025.jpg",
+            "description": "Фотография команды на годовщину компании",
+            "encodingFormat": "image/jpeg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "DataDownload",
+            "name": "Archive_backup_2025.zip",
+            "description": "Полный бэкап проектов за 2025 год",
+            "encodingFormat": "application/zip"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flautcloud-pro.github.io#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "FlautCompany", "item": "https://flautcompany.github.io"},
+        {"@type": "ListItem", "position": 2, "name": "Flaut Cloud", "item": "https://flautcloud-pro.github.io"}
+      ]
     }
   ]
 }
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Перейти к содержимому</a>
+
+<div class="app">
+
+<aside class="sidebar" id="sidebar" aria-label="Навигация по хранилищу">
+<a href="#" class="sidebar-logo" aria-label="Flaut Cloud — на главную">Flaut<span>Cloud</span></a>
+<div class="sidebar-sublogo">Облачное хранилище</div>
+
+<div class="storage-widget" id="storageWidget" role="status" aria-label="Использование хранилища">
+<div class="storage-head">
+<span class="storage-label">Личное хранилище</span>
+<span class="storage-value" id="storageValue">Войдите</span>
+</div>
+<div class="storage-bar" id="storageBar" hidden>
+<div class="storage-bar-fill" id="storageFill" style="width:0%"></div>
+</div>
+<div class="storage-hint" id="storageHint">Войдите, чтобы увидеть объём</div>
+</div>
+
+<div class="nav-section">Хранилище</div>
+<nav class="sidebar-nav" aria-label="Разделы">
+<button class="nav-item active" data-view="all" type="button">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+Все файлы
+<span class="nav-badge" id="navAllCount">0</span>
+</button>
+<button class="nav-item" data-view="recent" type="button">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+Недавние
+</button>
+<button class="nav-item" data-view="starred" type="button">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>
+Избранное
+<span class="nav-badge" id="navStarredCount">0</span>
+</button>
+<button class="nav-item" data-view="shared" type="button">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+Общие
+</button>
+<button class="nav-item" data-view="trash" type="button">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>
+Корзина
+<span class="nav-badge" id="navTrashCount">0</span>
+</button>
+</nav>
+
+<div class="nav-section">Команда</div>
+<nav class="sidebar-nav sidebar-nav-compact" aria-label="Корпоративное хранилище">
+<button class="nav-item" data-view="team" type="button">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>
+Корпоративное
+<span class="nav-badge" id="teamNavBadge">4 ГБ</span>
+</button>
+</nav>
+
+<button class="sidebar-security" id="securityBtn" type="button" aria-label="Как защищены ваши файлы">
+<span class="sidebar-security-head">
+<span class="sidebar-security-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+</span>
+<span class="sidebar-security-title">.fsecurity</span>
+</span>
+<span class="sidebar-security-text">Как защищены ваши файлы →</span>
+</button>
+
+<button class="sidebar-user" type="button" id="userBtn" aria-label="Профиль">
+<span class="user-avatar" id="userAvatar">Г</span>
+<span class="user-info">
+<span class="user-name" id="userName">Гость</span>
+<span class="user-tag" id="userTag">Войдите, чтобы хранить файлы</span>
+</span>
+<span class="user-status" id="userStatus" aria-hidden="true"></span>
+</button>
+</aside>
+
+<main class="main" id="main">
+
+<header class="topbar">
+<button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Открыть меню">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+</button>
+<div class="search-wrap">
+<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+<label for="searchInput" class="visually-hidden">Поиск по файлам</label>
+<input type="search" id="searchInput" class="search" placeholder="Поиск по файлам…" autocomplete="off">
+</div>
+<div class="topbar-actions">
+<div class="notif-wrap">
+<button class="icon-btn" type="button" id="notifBtn" title="Уведомления" aria-label="Уведомления" aria-expanded="false">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+<span class="dot" id="notifDot" aria-hidden="true"></span>
+</button>
+<div class="notif-panel" id="notifPanel" role="dialog" aria-label="Уведомления" hidden>
+<div class="notif-panel-head">
+<span class="notif-panel-title">Уведомления</span>
+<button class="notif-clear" type="button" id="notifClear">Отметить прочитанными</button>
+</div>
+<div class="notif-list" id="notifList"></div>
+</div>
+</div>
+<button class="btn btn-ghost topbar-login" type="button" id="loginBtn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3L3 10.5l5 2L10 19l3.5-4.5L19 19l2-16z"/></svg>
+<span>Войти</span>
+</button>
+<button class="btn btn-primary" type="button" id="uploadBtn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+<span>Загрузить</span>
+</button>
+</div>
+</header>
+
+<section class="hero-intro" aria-labelledby="heroTitle">
+<div class="hero-badge">Облачное хранилище · FlautCompany</div>
+<h1 class="hero-title" id="heroTitle">Ваше облако. Без границ.</h1>
+<p class="hero-sub">Flaut Cloud хранит файлы без ограничений по объёму на премиум-тарифах. Бесплатно — 2 ГБ личного и 4 ГБ корпоративного пространства. Каждый файл защищён технологией <strong>.fsecurity</strong>.</p>
+<div class="hero-actions">
+<button class="btn btn-primary" type="button" id="heroUpload">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 20h16"/></svg>
+Начать бесплатно
+</button>
+<button class="btn btn-ghost" type="button" id="heroPricing">Посмотреть тарифы</button>
+</div>
+
+<div class="hero-meta" aria-label="Ключевые показатели">
+<div class="hero-meta-item">
+<span class="hero-meta-value">2 ГБ</span>
+<span class="hero-meta-label">Бесплатно</span>
+</div>
+<div class="hero-meta-item">
+<span class="hero-meta-value">4 ГБ</span>
+<span class="hero-meta-label">Корпоративное</span>
+</div>
+<div class="hero-meta-item">
+<span class="hero-meta-value">∞</span>
+<span class="hero-meta-label">На Максималке</span>
+</div>
+</div>
+</section>
+
+<section class="pricing-section reveal" id="pricing" aria-labelledby="pricingTitle">
+<div class="section-head">
+<h2 class="section-title" id="pricingTitle">Тарифы Premium</h2>
+<p class="section-desc">Больше места — больше возможностей. Оплата через <a href="https://t.me/flautpay_bot" target="_blank" rel="noopener noreferrer">@flautpay_bot</a> или на сайте через Lava.top.</p>
+</div>
+
+<div class="pricing-grid">
+<article class="pricing-card">
+<span class="pricing-emoji" aria-hidden="true">📦</span>
+<h3 class="pricing-name">На Лайте</h3>
+<div class="pricing-price"><span class="price-value">299</span><span class="price-unit">₽ / мес</span></div>
+<ul class="pricing-features">
+<li>45 ГБ личного хранилища</li>
+<li>90 ГБ корпоративного</li>
+<li>Защита .fsecurity</li>
+<li>Файлы до 2 ГБ</li>
+</ul>
+<a class="btn btn-ghost pricing-btn" href="https://t.me/flautpay_bot" target="_blank" rel="noopener noreferrer">Оформить</a>
+</article>
+
+<article class="pricing-card pricing-card-featured">
+<span class="pricing-emoji" aria-hidden="true">📦</span>
+<h3 class="pricing-name">В Плюсе</h3>
+<div class="pricing-price"><span class="price-value">399</span><span class="price-unit">₽ / мес</span></div>
+<ul class="pricing-features">
+<li>1 ТБ личного хранилища</li>
+<li>2 ТБ корпоративного</li>
+<li>Защита .fsecurity</li>
+<li>Файлы до 2 ГБ</li>
+</ul>
+<a class="btn btn-primary pricing-btn" href="https://t.me/flautpay_bot" target="_blank" rel="noopener noreferrer">Оформить</a>
+</article>
+
+<article class="pricing-card">
+<span class="pricing-emoji" aria-hidden="true">🔥</span>
+<h3 class="pricing-name">На Максималке</h3>
+<div class="pricing-price"><span class="price-value">799</span><span class="price-unit">₽ / мес</span></div>
+<ul class="pricing-features">
+<li>Безлимит личного хранилища</li>
+<li>Безлимит корпоративного</li>
+<li>Защита .fsecurity</li>
+<li>Файлы до 2 ГБ</li>
+</ul>
+<a class="btn btn-ghost pricing-btn" href="https://t.me/flautpay_bot" target="_blank" rel="noopener noreferrer">Оформить</a>
+</article>
+</div>
+
+<p class="pricing-note">Бесплатный тариф: 2 ГБ личного и 4 ГБ корпоративного хранилища. Один файл — до 2 ГБ.</p>
+</section>
+
+<section class="files-section reveal" id="files" aria-labelledby="filesTitle">
+<div class="section-head-inline">
+<h2 class="section-title-sm" id="filesTitle">Мои файлы</h2>
+<div class="files-tools" role="group" aria-label="Фильтры файлов">
+<button class="chip active" type="button" data-filter="all" aria-pressed="true">Все</button>
+<button class="chip" type="button" data-filter="doc" aria-pressed="false">Документы</button>
+<button class="chip" type="button" data-filter="media" aria-pressed="false">Медиа</button>
+<button class="chip" type="button" data-filter="archive" aria-pressed="false">Архивы</button>
+</div>
+</div>
+
+<div class="quick-grid" aria-label="Быстрый доступ">
+<button class="quick-card" type="button">
+<div class="quick-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+</div>
+<div class="quick-name">Проекты</div>
+<div class="quick-meta">24 файла · 480 МБ</div>
+</button>
+<button class="quick-card" type="button">
+<div class="quick-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+</div>
+<div class="quick-name">Изображения</div>
+<div class="quick-meta">56 файлов · 320 МБ</div>
+</button>
+<button class="quick-card" type="button">
+<div class="quick-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M17 9l4-2v10l-4-2"/></svg>
+</div>
+<div class="quick-name">Видео</div>
+<div class="quick-meta">12 файлов · 780 МБ</div>
+</button>
+<button class="quick-card" type="button">
+<div class="quick-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+</div>
+<div class="quick-name">Документы</div>
+<div class="quick-meta">36 файлов · 120 МБ</div>
+</button>
+</div>
+
+<div class="file-grid" id="fileGrid"></div>
+
+<div class="empty-state" id="filesEmpty" hidden>
+<div class="empty-state-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+</div>
+<h3 class="empty-state-title" id="emptyTitle">Войдите, чтобы увидеть файлы</h3>
+<p class="empty-state-text" id="emptyText">После входа через Telegram здесь появятся ваши документы, медиа и архивы. Всё защищено технологией .fsecurity.</p>
+<button class="btn btn-primary empty-state-btn" type="button" id="emptyLoginBtn">Войти через Telegram</button>
+</div>
+</section>
+
+<section class="team-section reveal" id="team" aria-labelledby="teamTitle">
+<div class="section-head">
+<h2 class="section-title" id="teamTitle">Корпоративное хранилище</h2>
+<p class="section-desc">Общая папка для команды. 4 ГБ бесплатно. Создаётся прямо на сайте — нужны название компании и ИНН.</p>
+</div>
+
+<div class="team-grid" id="teamCreateView">
+<div class="team-info">
+<h3 class="team-info-title">Что вы получаете</h3>
+<ul class="team-info-list">
+<li>
+<span class="team-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+<span><strong>4 ГБ бесплатно</strong> — общее пространство команды</span>
+</li>
+<li>
+<span class="team-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+<span><strong>Участники</strong> — добавляйте коллег по @username</span>
+</li>
+<li>
+<span class="team-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+<span><strong>Общие файлы</strong> — все участники видят и скачивают</span>
+</li>
+<li>
+<span class="team-info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+<span><strong>Управление</strong> — владелец решает, кто в команде</span>
+</li>
+</ul>
+<p class="team-info-note">Нужно больше 4 ГБ? Оформите тариф «На Лайте», «В Плюсе» или «На Максималке» — корпоративное пространство увеличится автоматически.</p>
+</div>
+
+<form class="team-form" id="teamForm" novalidate>
+<h3 class="team-form-title">Создать команду</h3>
+<p class="team-form-desc">Заполните данные компании. Хранилище активируется сразу после создания.</p>
+
+<div class="field">
+<label for="teamCompany">Название компании</label>
+<input type="text" id="teamCompany" name="company" placeholder="ООО Ромашка" required minlength="2" maxlength="120" autocomplete="organization">
+<span class="field-error" id="teamCompanyError" role="alert"></span>
+</div>
+
+<div class="field">
+<label for="teamInn">ИНН</label>
+<input type="text" id="teamInn" name="inn" placeholder="10 или 12 цифр" required inputmode="numeric" pattern="\d{10}|\d{12}" maxlength="12" autocomplete="off">
+<span class="field-hint">10 цифр — для организаций, 12 — для ИП</span>
+<span class="field-error" id="teamInnError" role="alert"></span>
+</div>
+
+<div class="field field-checkbox">
+<label class="checkbox">
+<input type="checkbox" id="teamAgree" name="agree" required>
+<span class="checkbox-mark" aria-hidden="true"></span>
+<span class="checkbox-text">Я принимаю условия <a href="https://flautcompany.github.io/oferta.html" target="_blank" rel="noopener noreferrer">оферты</a> и <a href="https://flautcompany.github.io/privacy.html" target="_blank" rel="noopener noreferrer">политики конфиденциальности</a></span>
+</label>
+<span class="field-error" id="teamAgreeError" role="alert"></span>
+</div>
+
+<button class="btn btn-primary team-submit" type="submit">Создать корпоративное хранилище</button>
+<div class="team-form-note" id="teamFormNote" role="status" aria-live="polite"></div>
+</form>
+</div>
+
+<div class="team-panel" id="teamPanel" hidden></div>
+</section>
+
+</main>
+</div>
+
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-left">Продукт <a href="https://flautcompany.github.io" target="_blank" rel="noopener noreferrer">FlautCompany</a> · © 2024–2025</div>
+<div class="footer-right">Самозанятый Стекольников А.В., ИНН 503818801200</div>
+</div>
+</footer>
+
+<div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+<div class="modal">
+<button class="modal-close" type="button" data-close aria-label="Закрыть">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</button>
+<span class="modal-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L3 10.5l5 2L10 19l3.5-4.5L19 19l2-16z"/></svg>
+</span>
+<h2 class="modal-title" id="loginTitle">Вход в Flaut Cloud</h2>
+<p class="modal-desc">Авторизуйтесь через Telegram, чтобы получить доступ к своему хранилищу. Это займёт несколько секунд.</p>
+
+<label class="checkbox checkbox-block">
+<input type="checkbox" id="loginAgree">
+<span class="checkbox-mark" aria-hidden="true"></span>
+<span class="checkbox-text">Я принимаю <a href="https://flautcompany.github.io/oferta.html" target="_blank" rel="noopener noreferrer">оферту</a> и <a href="https://flautcompany.github.io/privacy.html" target="_blank" rel="noopener noreferrer">политику конфиденциальности</a></span>
+</label>
+<span class="field-error" id="loginAgreeError" role="alert"></span>
+
+<div class="modal-actions">
+<div id="telegram-login-container" class="telegram-login-container"></div>
+<button class="btn btn-ghost" type="button" data-close>Продолжить без входа</button>
+</div>
+
+<p class="modal-footnote">Мы не получаем доступ к вашим сообщениям. Только имя, username и ID для создания хранилища.</p>
+</div>
+</div>
+
+<div class="modal-overlay" id="uploadModal" role="dialog" aria-modal="true" aria-labelledby="uploadTitle" hidden>
+<div class="modal">
+<button class="modal-close" type="button" data-close aria-label="Закрыть">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</button>
+<span class="modal-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 20h16"/></svg>
+</span>
+<h2 class="modal-title" id="uploadTitle">Загрузка файлов</h2>
+<p class="modal-desc">Файлы отправляются в защищённое хранилище <strong>.fsecurity</strong>. Один файл — до 2 ГБ.</p>
+<div class="upload-list" id="uploadList"></div>
+<div class="modal-actions">
+<button class="btn btn-primary" type="button" data-close>Готово</button>
+</div>
+</div>
+</div>
+
+<div class="modal-overlay" id="viewerModal" role="dialog" aria-modal="true" aria-labelledby="viewerName" hidden>
+<div class="modal modal-wide">
+<button class="modal-close" type="button" data-close aria-label="Закрыть">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</button>
+<div class="viewer-preview" id="viewerPreview"></div>
+<h2 class="modal-title modal-title-left" id="viewerName">—</h2>
+<p class="modal-desc modal-desc-left" id="viewerSub">—</p>
+<div class="viewer-info">
+<div class="viewer-info-item"><span class="viewer-info-label">Размер</span><span class="viewer-info-value" id="viewerSize">—</span></div>
+<div class="viewer-info-item"><span class="viewer-info-label">Изменён</span><span class="viewer-info-value" id="viewerDate">—</span></div>
+<div class="viewer-info-item"><span class="viewer-info-label">Тип</span><span class="viewer-info-value" id="viewerType">—</span></div>
+<div class="viewer-info-item"><span class="viewer-info-label">Защита</span><span class="viewer-info-value">.fsecurity</span></div>
+</div>
+<div class="modal-actions modal-actions-row">
+<button class="btn btn-primary" type="button" id="viewerDownload">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg>
+Скачать
+</button>
+<button class="btn btn-ghost" type="button" id="viewerStar">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>
+В избранное
+</button>
+</div>
+</div>
+</div>
+
+<div class="modal-overlay" id="securityModal" role="dialog" aria-modal="true" aria-labelledby="securityModalTitle" hidden>
+<div class="modal modal-wide modal-security">
+<button class="modal-close" type="button" data-close aria-label="Закрыть">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</button>
+
+<div class="security-modal-head">
+<span class="modal-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+</span>
+<h2 class="modal-title" id="securityModalTitle">Как защищены ваши файлы</h2>
+<p class="modal-desc">Технология <strong>.fsecurity</strong> от FlautSecurity. Четыре шага — от файла до шифротекста.</p>
+</div>
+
+<div class="security-carousel">
+<div class="carousel-track-wrap">
+<div class="carousel-track" id="carouselTrack">
+
+<article class="carousel-slide" data-slide="0">
+<span class="slide-index">01 / 04</span>
+<h3 class="slide-title">Что такое .fsecurity</h3>
+<p class="slide-text">Это модуль шифрования внутри Flaut Cloud. Он превращает каждый файл в набор данных, который невозможно прочитать без специального ключа. Ключ создаётся только для вас и только для этого файла.</p>
+<div class="slide-visual" aria-hidden="true">
+<span class="lock-body">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+</span>
+<span class="lock-caption">Ваш файл. Только ваш ключ.</span>
+</div>
+</article>
+
+<article class="carousel-slide" data-slide="1">
+<span class="slide-index">02 / 04</span>
+<h3 class="slide-title">Как шифруется файл</h3>
+<p class="slide-text">Для каждого файла .fsecurity создаёт отдельный случайный ключ. Затем файл шифруется алгоритмом AES-256-GCM — проверенным стандартом, который защищает банки и государственные системы. Изменить зашифрованный файл незаметно невозможно.</p>
+<div class="slide-flow" aria-hidden="true">
+<span class="flow-step"><span class="flow-dot"></span>Файл</span>
+<span class="flow-arrow"></span>
+<span class="flow-step"><span class="flow-dot"></span>Уникальный ключ</span>
+<span class="flow-arrow"></span>
+<span class="flow-step"><span class="flow-dot"></span>AES-256-GCM</span>
+<span class="flow-arrow"></span>
+<span class="flow-step flow-step-end"><span class="flow-dot"></span>Шифротекст</span>
+</div>
+</article>
+
+<article class="carousel-slide" data-slide="2">
+<span class="slide-index">03 / 04</span>
+<h3 class="slide-title">Три независимых уровня</h3>
+<p class="slide-text">Данные, ключи и сами файлы хранятся отдельно. Нажмите на уровень, чтобы увидеть, что там лежит и почему кража одного компонента ничего не даёт злоумышленнику.</p>
+<div class="slide-levels" role="group" aria-label="Уровни защиты">
+<button class="level-card" type="button" data-level="db">
+<span class="level-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+<span class="level-name">База данных</span>
+<span class="level-hint">Нажмите</span>
+</button>
+<button class="level-card" type="button" data-level="crypto">
+<span class="level-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+<span class="level-name">.fsecurity</span>
+<span class="level-hint">Нажмите</span>
+</button>
+<button class="level-card" type="button" data-level="storage">
+<span class="level-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg></span>
+<span class="level-name">Хранилище</span>
+<span class="level-hint">Нажмите</span>
+</button>
+</div>
+<div class="level-detail" id="levelDetail" role="status" aria-live="polite">
+<span class="level-detail-empty">Выберите уровень выше</span>
+</div>
+</article>
+
+<article class="carousel-slide" data-slide="3">
+<span class="slide-index">04 / 04</span>
+<h3 class="slide-title">Попробуйте взломать</h3>
+<p class="slide-text">Представьте, что вы злоумышленник. У вас есть возможность украсть один компонент. Выберите какой — и посмотрите, что вы получите.</p>
+<div class="game" id="game">
+<div class="game-attempts" id="gameAttempts" aria-live="polite">Попытка 1 из 3</div>
+<div class="game-choices" role="group" aria-label="Выбор компонента для кражи">
+<button class="game-choice" type="button" data-target="db">
+<span class="game-choice-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/></svg></span>
+База данных
+</button>
+<button class="game-choice" type="button" data-target="crypto">
+<span class="game-choice-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+.fsecurity
+</button>
+<button class="game-choice" type="button" data-target="storage">
+<span class="game-choice-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg></span>
+Хранилище
+</button>
+</div>
+<div class="game-result" id="gameResult" role="status" aria-live="polite"></div>
+</div>
+<a class="security-link" href="https://habr.com/ru/articles/1074172/" target="_blank" rel="noopener noreferrer">
+<span>Полное описание технологии</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+</a>
+</article>
+
+</div>
+</div>
+
+<div class="security-carousel-foot">
+<button class="icon-btn carousel-arrow" id="carouselPrev" type="button" aria-label="Предыдущий слайд">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+</button>
+<div class="carousel-dots" role="tablist" aria-label="Слайды">
+<button class="carousel-dot active" type="button" data-goto="0" role="tab" aria-selected="true" aria-label="Слайд 1"></button>
+<button class="carousel-dot" type="button" data-goto="1" role="tab" aria-selected="false" aria-label="Слайд 2"></button>
+<button class="carousel-dot" type="button" data-goto="2" role="tab" aria-selected="false" aria-label="Слайд 3"></button>
+<button class="carousel-dot" type="button" data-goto="3" role="tab" aria-selected="false" aria-label="Слайд 4"></button>
+</div>
+<button class="icon-btn carousel-arrow" id="carouselNext" type="button" aria-label="Следующий слайд">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+<div class="modal">
+<button class="modal-close" type="button" data-close aria-label="Закрыть">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</button>
+<span class="modal-icon modal-icon-success" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+</span>
+<h2 class="modal-title" id="successTitle">Готово</h2>
+<p class="modal-desc" id="successText">Действие выполнено успешно.</p>
+<div class="modal-actions">
+<button class="btn btn-primary" type="button" data-close>Понятно</button>
+</div>
+</div>
+</div>
+
+<script src="api.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
