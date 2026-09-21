@@ -135,7 +135,8 @@
     gameAttempts: 0,
     maxAttempts: 3,
     user: null,
-    currentViewerFile: null
+    currentViewerFile: null,
+    telegramInited: false
   };
 
   const storageValue = $('#storageValue');
@@ -714,54 +715,62 @@
     renderFiles();
   }
 
+  function handleTelegramAuth(result) {
+    if (!result) return;
+    if (result.error) {
+      console.error('Telegram auth error:', result.error);
+      return;
+    }
+    const idToken = result.id_token;
+    if (!idToken) {
+      console.error('No id_token in result', result);
+      return;
+    }
+    window.FlautAPI.authenticate({ id_token: idToken }).then(function (res) {
+      if (res && res.ok) {
+        setUser(res.user || result.user || {});
+        closeModal($('#loginModal'));
+      } else {
+        console.error('Backend rejected token', res);
+      }
+    }).catch(function (err) {
+      console.error('Auth request failed:', err);
+    });
+  }
+
   function initTelegramWidget() {
     if (!telegramContainer) return;
     telegramContainer.innerHTML = '';
 
-    const onAuth = function (user) {
-      if (!user) return;
-      window.FlautAPI.authenticate(user).then(function (res) {
-        if (res && res.ok) {
-          setUser(user);
-          closeModal($('#loginModal'));
-        }
-      }).catch(function () {});
-    };
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn btn-primary';
+    btn.style.width = '100%';
+    btn.innerHTML =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3L3 10.5l5 2L10 19l3.5-4.5L19 19l2-16z"/></svg>Войти через Telegram';
 
-    if (window.Telegram && window.Telegram.Login) {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'btn btn-primary';
-      btn.style.width = '100%';
-      btn.innerHTML =
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3L3 10.5l5 2L10 19l3.5-4.5L19 19l2-16z"/></svg>Войти через Telegram';
-      btn.addEventListener('click', function () {
-        if (!loginAgree.checked) {
-          loginAgreeError.textContent = 'Подтвердите согласие с документами.';
-          loginAgreeError.classList.add('visible');
-          return;
-        }
-        loginAgreeError.classList.remove('visible');
-        if (window.Telegram.Login.open) {
-          window.Telegram.Login.open(onAuth);
-        } else if (window.Telegram.Login.auth) {
-          window.Telegram.Login.auth({ client_id: CLIENT_ID, request_access: 'write' }, onAuth);
-        }
-      });
-      telegramContainer.appendChild(btn);
-    } else {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'btn btn-primary';
-      btn.style.width = '100%';
-      btn.disabled = true;
-      btn.textContent = 'Вход через Telegram';
-      telegramContainer.appendChild(btn);
+    btn.addEventListener('click', function () {
+      if (!loginAgree.checked) {
+        loginAgreeError.textContent = 'Подтвердите согласие с документами.';
+        loginAgreeError.classList.add('visible');
+        return;
+      }
+      loginAgreeError.classList.remove('visible');
 
-      window.addEventListener('load', function () {
-        setTimeout(initTelegramWidget, 300);
-      }, { once: true });
-    }
+      if (!window.Telegram || !window.Telegram.Login) {
+        console.error('Telegram SDK не загружен');
+        return;
+      }
+
+      try {
+        window.Telegram.Login.init({ client_id: CLIENT_ID }, handleTelegramAuth);
+        window.Telegram.Login.open();
+      } catch (err) {
+        console.error('Telegram.Login error:', err);
+      }
+    });
+
+    telegramContainer.appendChild(btn);
   }
 
   function bindModals() {
@@ -897,10 +906,11 @@
         state.view = item.dataset.view;
 
         if (state.view === 'team') {
-          fileGrid.hidden = true;
-          filesEmpty.hidden = true;
+          document.getElementById('team').scrollIntoView({ behavior: 'smooth', block: 'start' });
           return;
         }
+
+        document.getElementById('files').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
         if (state.view === 'trash') {
           state.filter = 'all';
