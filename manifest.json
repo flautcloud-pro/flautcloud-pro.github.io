@@ -1,1 +1,40 @@
-
+{
+  "name": "Flaut Cloud — Облачное хранилище",
+  "short_name": "Flaut Cloud",
+  "description": "Безлимитное облачное хранилище с защитой .fsecurity. Бесплатно 2 ГБ личного и 4 ГБ корпоративного пространства.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07070D",
+  "theme_color": "#07070D",
+  "lang": "ru",
+  "dir": "ltr",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    {
+      "src": "flaut_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "flaut_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Загрузить файл",
+      "url": "/#files",
+      "description": "Загрузить файл в защищённое хранилище"
+    },
+    {
+      "name": "Тарифы",
+      "url": "/#pricing",
+      "description": "Посмотреть тарифы Premium"
+    }
+  ]
+}
